@@ -1,0 +1,124 @@
+.AppContainer{
+	width: 70%;
+	min-height: 300px;
+	display: flex;
+	margin: 20px auto 0 auto;
+	border-radius: 15px;
+	background-color: #F3BCEC;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 15px;
+
+	&__add{
+
+	}
+}
+
+.AddNoteContainer{
+	background-color: #C750FF;
+	border-radius: 10px;
+	padding: 5px;
+
+	&__create{
+		margin-bottom: 10px;
+		width: auto;
+		background-color: #B5B5B5;
+		border-radius: 10px;
+		text-align: center;
+		height: 35px;
+		line-height: 35px;
+		cursor: pointer;
+
+		&:hover{
+			background-color: #C5C5C5;
+		}
+	}
+
+	&__form{
+		display: flex;
+		flex-direction: column;
+	}
+
+	input[name=nameN]{
+		margin-bottom: 10px;
+	}
+
+	textarea[name=textN]{
+		height: 200px;
+		resize: none;
+	}
+}
+
+.nodeList{
+	background-color: #C750FF;
+	border-radius: 10px;
+	padding: 5px;
+	width: 200px;
+	min-height: 100px;
+	
+	&__list{
+		margin-left: 0;
+    	padding-left: 0;
+	}
+
+	&__item{
+		background-color: #C7503F;
+		border-radius: 10px;
+		margin-bottom: 5px;
+		list-style-type: none;
+		margin-left: 0px;
+		height: 40px;
+		overflow: hidden;
+		padding: 5px;
+		cursor: pointer;
+
+			.mtext{
+				color: green;
+				overflow: hidden;
+			}
+	}
+}
+
+.Note{
+	background-color: #C750FF;
+	border-radius: 10px;
+	padding: 5px;
+	min-width: 200px;
+	min-height: 100px;
+	max-width: 400px;
+
+	&__name{
+		width: auto;
+		background-color: #B5B5B5;
+		border-radius: 10px;
+		height: 35px;
+		text-align: center;
+		height: 35px;
+		line-height: 35px;
+		margin-bottom: 5px;
+	}
+
+	&__text{
+		width: auto;
+
+		background-color: #B5B5B5;
+		border-radius: 10px;
+		margin-bottom: 10px;
+		padding: 5px;
+
+	}
+
+	&__delete-button{
+		width: auto;
+		background-color: #B5B5B5;
+		border-radius: 10px;
+		text-align: center;
+		height: 35px;
+		line-height: 35px;
+		cursor: pointer;
+
+		&:hover{
+			background-color: #C5C5C5;
+		}
+	}
+}
